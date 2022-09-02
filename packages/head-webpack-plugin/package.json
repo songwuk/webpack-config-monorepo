@@ -2,6 +2,7 @@
   "name": "head-webpack-plugin",
   "version": "0.0.0-alpha.1",
   "description": "head-webpack-plugin",
+  "homepage": "https://github.com/songwuk/webpack-config-monorepo",
   "main": "src/index.js",
   "engines": {
     "node": ">= 12.13.0"

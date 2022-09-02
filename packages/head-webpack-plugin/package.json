@@ -1,0 +1,20 @@
+{
+  "name": "head-webpack-plugin",
+  "version": "0.0.0-alpha.1",
+  "description": "head-webpack-plugin",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 12.13.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "head"
+  ],
+  "author": "Song wuk <1017301325@qq.com>",
+  "license": "MIT"
+}

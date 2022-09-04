@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "webpack": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --config webpack.config.js --progress --colors",
+    "webpack:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "prebuild": "npm run clean",
     "build": "cross-env NODE_ENV=production babel src -d dist --copy-files"
   },
@@ -19,13 +21,14 @@
     "babel-jest": "^28.1.0",
     "babel-preset-env": "^1.7.0",
     "cross-env": "^7.0.3",
-    "html-webpack-plugin": "4",
     "head-webpack-plugin": "workspace:*",
+    "html-webpack-plugin": "4",
     "jest": "^28.1.0",
     "memfs": "^3.4.7",
     "memory-fs": "^0.5.0",
     "webpack": "4.46.0",
-    "webpack-cli": "3.x"
+    "webpack-cli": "3.x",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "html-loader": "^3.1.0"

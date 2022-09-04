@@ -1,10 +1,17 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HeadWebpackPlugin = require("head-webpack-plugin")
+const NODE_ENV = process.env.NODE_ENV;
+console.log(NODE_ENV)
 const path = require('path')
 module.exports = {
-  mode: 'development',
+  mode: NODE_ENV,
   entry: {
     app: './src/index.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
   },
   output: {
     filename: 'bundle.js',

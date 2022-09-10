@@ -1,5 +1,5 @@
 import { getOptions } from 'loader-utils';
-
+import webpack = require('webpack')
 export default async function loader(source) {
 
   const options = getOptions(this);
